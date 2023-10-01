@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "fuzz": "jazzer fuzz -f fuzzFn corpus/ -i tree-kit --sync -- -dict=dict.txt",
+	 "coverage": "jazzer fuzz -m regression -f fuzzFn -i tree-kit --coverage --cov_dir=treekit_coverage/ -- -dict=dict.txt"
+
+    },
+    "dependencies": {
+        "tree-kit": "0.6.2"
+    },
+    "devDependencies": {
+        "@jazzer.js/core": "^1.6.1"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "fuzz": "jazzer fuzz corpus/ -f fuzz --sync",
+	"coverage": "jazzer fuzz corpus/ -f fuzz -m regression -i fuzz -i dot-prop --coverage --cov_dir=dotprop_coverage/ --sync"
+    },
+    "dependencies": {
+        "dot-prop": "^4.2.0"
+    },
+    "devDependencies": {
+        "@jazzer.js/core": "^1.6.1"
+    }
+}
